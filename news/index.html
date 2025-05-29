@@ -1,0 +1,955 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    Transatlantic Privacy Perceptions · 
+        News
+      
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/assistant/assistant.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/fontawesome.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/solid.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/brands.css">
+
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<style type="text/tailwindcss">
+  html {
+  height: 100%;
+}
+
+body {
+  /* Vertical alignment of <header>, <main> and <footer> */
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.prose {
+  @apply text-base;
+}
+
+.container-width {
+  @apply w-full;
+}
+.container {
+  @apply container-width px-6 py-10 lg:px-8;
+}
+.container-mini {
+  @apply mx-auto w-full max-w-3xl;
+
+  .container-escape {
+    @apply lg:-ml-40 lg:-mr-40;
+  }
+}
+
+header {
+  font-weight: 500;
+}
+
+.prose {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+}
+h1{
+    @apply text-xl font-semibold my-6;
+}
+a,button{
+    transition:color 0.5s ease;
+}
+main a{
+    position:relative;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+
+
+li{
+    position:relative;
+    margin-left:28px;
+    }
+li::before{
+    content:'\2022';
+    position:absolute;
+    left:-28px;
+    line-height:1.6;
+    
+}
+main > *{
+    @apply py-24 px-6 md:px-16 lg:px-24 xl:px-24;
+}
+/*.padding-all{
+@apply px-6 md:px-16 lg:px-24 xl:px-24;
+}*/
+::selection{
+   @apply bg-accent;
+   @apply text-primary;
+}
+
+ p{
+   @apply mb-4 py-0 !important; 
+   @apply max-w-[1024px];
+}
+/*h3:after{
+    content:"";
+    position:absolute;
+    background: white;
+    display: block;
+    top:0;
+    bottom:0;
+    width:100vw;
+    left:0;
+    
+    z-index:0;
+    
+}
+h3{
+    z-index:1;
+}*/
+[popover]:not(:popover-open):not(dialog[open]) > div{
+    transition:all 0.6s ease;
+    transform: translateY(100%);
+ 
+}
+[popover] > div{
+    transition:all 0.6s ease;
+    transform: translateY(0%);
+ 
+}
+
+.inline-arrow {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+</style>
+<script>
+  /** @type {import('tailwindcss').Config} */
+tailwind.config = {
+  theme: {
+    fontSize: {
+      xs:'0.75rem',
+      sm: '1rem',
+      base: '1.5rem', 
+      lg: '2rem',
+      xl: '2.5rem',
+      '2xl': '3rem',
+      '3xl': '4rem',
+      '4xl':'6rem',
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'xxl': '1600px',
+      
+    },
+    extend: {
+      fontFamily: {
+        sans: ['"Assistant Variable"'],
+      },
+      colors: {
+        primary: '#071A2D',
+        secondary:'#FFD469',
+        grey:'#F5F5F5',
+        accent:'#FFD469',
+      },
+    },
+  },
+}
+
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;js/lettershuffler.js"></script>
+<style>
+    .test{
+        display:inline-block;
+    }
+    .test span{
+        display:inline-block;
+        transform:rotateX(0deg);
+        transition:all 0.2s ease;
+        color:rgb(255 212 105);
+    }
+     .test span.active{
+        transform:rotateX(90deg);
+        
+    }
+</style>
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+</head>
+<body class="!block">
+  
+  <header class="fixed w-full z-10 top-0">
+    
+    <nav class="main-nav mx-auto flex absolute container-width  justify-between  pt-8 lg:pt-10 pb-6  px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">TAPP panel logo</span>
+            
+            <span class=" inline-block">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_1.svg">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_2.svg">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_3.svg">
+            </span> 
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-semibold inline-flex items-center justify-center rounded-md p-2.5 text-white hover:text-primary">
+                <span class="sr-only">Open main menu</span>
+                MENU
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            <a href="https://privacyperceptions.org/about/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                About
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https://privacyperceptions.org/results/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                DataViz
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/findings/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                Findings
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/people/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                People
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/faq/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                FAQ
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+        </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div popover id="global-menu" class="bg-transparent" role="dialog" aria-modal="true">
+        <div class="fixed flex flex-col items-center justify-center text-center inset-y-0 right-0 z-10 w-full overflow-y-auto bg-grey px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="absolute top-4 right-4">
+
+                <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-semibold rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="py-6">
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/about/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            About
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/results/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            DataViz
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/findings/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            Findings
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/people/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            People
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/faq/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            FAQ
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold   text-gray-900 hover:text-accent">News</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="float-nav" class="over z-30 fixed w-full top-0 -translate-y-full bg-white transition-all duration-700">
+    <nav class=" mx-auto flex relative container-width items-center justify-between  pt-6 pb-6 px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">TAPP panel logo</span>
+            
+                <img class="h-8 w-auto" src="https://privacyperceptions.org/assets/logo_full.svg" alt="TAPP panel logo">
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="text-primary -m-2.5 text-base font-semibold inline-flex items-center justify-center rounded-md p-2.5 ">
+                <span class="sr-only">Open main menu</span>
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+                MENU
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            <a href="https://privacyperceptions.org/about/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                About
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https://privacyperceptions.org/results/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                DataViz
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/findings/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                Findings
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/people/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                People
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/faq/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                FAQ
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+        </div>
+    </nav>
+</div>
+<script>
+  
+     var lastScrollTop;
+    
+       window.onscroll = function() {dropDownMenu();};
+    function dropDownMenu(){
+        
+        if (window.scrollY > document.getElementsByClassName("hero")[0].offsetHeight - 82){
+            document.getElementById("float-nav").classList.remove("-translate-y-full");
+            //document.getElementById("float-nav").classList.add("translate-y-0");
+            console.log("remove");
+        }else{
+            document.getElementById("float-nav").classList.add("-translate-y-full");
+            //document.getElementById("float-nav").classList.remove("translate-y-0");
+        }
+        
+        
+    }
+</script>
+
+
+  <!--main class=""><!--class='container'*/--></main-->
+    
+
+
+    
+        
+        
+        
+    
+    
+        
+        
+    
+    
+    
+    
+
+<div
+    class="hero text-white flex fixed w-full -z-10 top-0 h-[260px] items-end "
+    style="background: url(https://privacyperceptions.org/assets/hero.png);background-size:cover;">
+    
+    <h1 class="text-xl !font-normal  pt-8 pb-8 px-6 md:px-16 lg:px-24 xl:px-24 m-0">News</h1>
+    
+    
+    
+    
+</div>
+<main class="mt-[260px] bg-white z-20 text-base top-0 relative"> 
+    <!--div class="-mt-4"-->
+        
+        
+        <div class="flex flex-wrap  bg-grey relative">
+    
+    <h3 class="uppercase text-sm block font-bold mb-12 w-full">Latest news</h3>
+    
+
+    <div class="text-base leading-tight w-full max-w-[960px]  mx-auto pl-0 lg:pr-8  mb-10 lg:mb-0">
+        
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2024-12-10</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>📣 𝗝𝗼𝗶𝗻 𝗮𝗻𝗱 𝗹𝗲𝘁'𝘀 𝗳𝘂𝗲𝗹 𝘁𝗵𝗲 𝗰𝗼𝗻𝘃𝗲𝗿𝘀𝗮𝘁𝗶𝗼𝗻 𝘄𝗶𝘁𝗵 𝗶𝗻𝗳𝗼𝗿𝗺𝗲𝗱 𝗶𝗻𝘀𝗶𝗴𝗵𝘁𝘀!</p>
+<p>We are now accepting proposals for questions to be included in our next waves. If you have a question you'd like to propose or a topic you think TAPP should cover, please send your suggestions and ideas to &quot;<a href='mailto:info@privacyperceptions.org'>info@privacyperceptions.org</a>&quot;.</p>
+<p>Your input is valuable in shaping discussion about AI and digital privacy.</p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>  <span class="font-bold mb-2 inline-block mr-2">Olga Kononykhina</span> 2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗘𝗨 𝗔𝗜 𝗔𝗰𝘁: 𝗖𝗮𝗻 𝗥𝗲𝗴𝘂𝗹𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗜𝗻𝗻𝗼𝘃𝗮𝘁𝗶𝗼𝗻 𝗖𝗼𝗲𝘅𝗶𝘀𝘁?</p>
+<p>Are we over-regulating AI in Europe? Could this stifle startups or help create a more ethical and trustworthy AI ecosystem?</p>
+<p>Key insights from research (before and after adoption):
+A 2022 study (AI Act Impact Survey) of ~100 European startups showed 51% anticipated a slowdown in AI development, with 12% considering relocation or halting AI work; 16% expect a positive impact of the AI Act on their business.</p>
+<p>A September 2024 study (Transatlantic Privacy Perceptions (TAPP)) of 66 privacy experts showed that 18% of European experts believe the EU AI Act enables innovation, 30% see it as a barrier, and 36% expect no impact on innovation.</p>
+<p>Why might the AI Act hinder innovation? The TAPP experts say:</p>
+<p>🟥 High Compliance Costs: Meeting requirements like conformity assessments is expensive.
+🟥 Slower AI Development: Resources are diverted to compliance instead of innovation.
+🟥 SME Challenges: Small companies face disproportionate burdens, from reporting rules to accessing training data.
+🟥 Favoring Big Players: Established companies can better navigate and influence regulations, leaving newcomers at a disadvantage.
+🟥 Legal Ambiguity: Vague rules around data use and copyright create risks and deter investment.</p>
+<p>Why might the AI Act enable innovation? TAPP experts say:</p>
+<p>🟩 Better Governance: Rules can help tackle deep fakes, mass surveillance, and election interference, building public trust in AI safety.
+🟩 Stronger Data Practices: Encourages high-quality data governance to meet compliance standards.
+🟩 Protection of Rights: Promotes ethical AI by safeguarding individual rights and setting industry standards.
+🟩 Legislative Clarity: Provides clear enforcement mechanisms and resists undue influence from large corporations.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/activity-7267563680718884865-RcK3?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2024-11-25</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>🚨 TAPP Wave 1 Data available at GESIS 🚨</p>
+<p>The Transatlantic Privacy Perceptions (TAPP), Wave 1 (Fall 2022) data is now available at GESIS.</p>
+<p>This study provides insights into the privacy perceptions of experts across multiple sectors and countries, including the US, UK, Germany, China, and others.
+It explores the current and future challenges in digital privacy, focusing on laws, regulations, and corporate practices.</p>
+<p>📊 Key Details:</p>
+<p>Survey period: 09/13/2022 - 11/13/2022
+Countries involved: AT, BE, CN, DE, NL, NO, GB, US
+DOI: 10.4232/1.14198</p>
+<p>Access the data and more at GESIS here: <a href="https://search.gesis.org/research_data/ZA8757">https://search.gesis.org/research_data/ZA8757</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>🔍 𝗥𝗲𝗴𝗶𝗼𝗻𝗮𝗹 𝗗𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝗰𝗲𝘀 𝗶𝗻 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗣𝗿𝗶𝘃𝗮𝗰𝘆: 𝗣𝗿𝗼𝘁𝗲𝗰𝘁𝗶𝗻𝗴 𝗣𝗲𝗼𝗽𝗹𝗲 𝗼𝗿 𝗕𝘂𝘀𝗶𝗻𝗲𝘀𝘀𝗲𝘀?</p>
+<p>In our September 2024 wave of the TAPP survey of privacy experts, we asked: &quot;Do digital privacy laws in your region favor businesses or individual users?&quot; The findings highlight significant regional differences in expert perceptions:</p>
+<p>Europe
+❗ 🙋 Growing Focus on Individual Rights: 75% of respondents in 2024 believe European laws favor individual users, up from 43% in 2023. This suggests a shift towards stronger privacy protections.</p>
+<p>USA
+❗ 🏭 Continued Business Favoritism: A strong majority (86% in 2024) perceive U.S. laws as favoring businesses, with no visible change from 2023.</p>
+<p>🎓 TAPP is a research project conducted at the Universities of Maryland (UMD) 🇺🇸 and Munich (LMU) 🇩🇪.
+August 2023 data are based on 79 responses; September 2024 data are based on 66 responses.
+More information can be found at <a href="https://privacyperceptions.org">privacyperceptions.org</a>.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_privacy-laws-favor-people-or-business-activity-7254778510274129920-5wz2?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>🔍 𝗪𝗵𝗮𝘁 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗘𝘅𝗽𝗲𝗿𝘁𝘀 𝗕𝗲𝗹𝗶𝗲𝘃𝗲 𝗦𝗵𝗼𝘂𝗹𝗱 𝗕𝗲 𝗣𝗿𝗶𝗼𝗿𝗶𝘁𝗶𝗲𝘀 𝗶𝗻 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗿𝗼𝘁𝗲𝗰𝘁𝗶𝗼𝗻</p>
+<p>Our September 2024 wave of the TAPP Transatlantic Privacy Survey reveals shifts in how privacy professionals across Europe and the USA view key strategies for digital privacy. In both regions, we asked experts to rank five approaches based on their importance, from 1 (most important) to 5 (least important).</p>
+<p>The Five Key Privacy Priorities Surveyed:
+1️⃣ Adapting privacy laws to keep up with technological developments
+2️⃣ Empowering individuals to control their own data
+3️⃣ Enforcing strict rules on data processing, storage, and sharing
+4️⃣ Regulating how data is managed and stored
+5️⃣ Innovating with privacy-preserving technology</p>
+<p>Key insights:
+❗ Enforcing Rules is Increasingly Seen as the Top Priority: A higher percentage of privacy experts in both Europe and the USA now believe that “Enforcing rules” should be the most important priority.
+❗ In the USA, fewer experts believe “privacy-preserving technology” should be the top priority. Instead, there’s growing support for “Giving individuals control over their data” as the key approach.
+❗ Meanwhile, in Europe, there’s a shift away from “Regulating data processing and storage” as the critical measure for privacy protection. This suggests a reevaluation of where regulatory focus is most effective.</p>
+<p>🎓 TAPP is a research project conducted at the Universities of Maryland (UMD) 🇺🇸 and Munich (LMU) 🇩🇪.
+August 2023 data are based on 79 responses; September 2024 data are based on 66 responses.
+More information can be found at <a href="https://privacyperceptions.org">privacyperceptions.org</a>.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_privacy-priorities-activity-7252046658551603200-D3YL?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗪𝗮𝘃𝗲 𝟱 𝗼𝗳 𝗼𝘂𝗿 𝗧𝗿𝗮𝗻𝘀𝗮𝘁𝗹𝗮𝗻𝘁𝗶𝗰 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗲𝗿𝗰𝗲𝗽𝘁𝗶𝗼𝗻𝘀 𝗦𝘂𝗿𝘃𝗲𝘆 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗰𝗼𝗺𝗽𝗹𝗲𝘁𝗲𝗱.
+We gathered 67 responses from experts in Europe and the U.S., providing critical perspectives on privacy practices and the impact of AI regulation. We will begin publishing the results next week and look forward to sharing annual trends and insights with you.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_tapp-wave-5-demographics-activity-7243990428042072064-Ai1b?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗛𝗼𝘄 𝗔𝗿𝗲 𝗕𝗶𝗴 𝗧𝗲𝗰𝗵 𝗖𝗼𝗺𝗽𝗮𝗻𝗶𝗲𝘀 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗶𝗻𝗴 𝗼𝗻 𝗣𝗿𝗶𝘃𝗮𝗰𝘆? 🔒</p>
+<p>Wave 5 of our Transatlantic Privacy Perception (TAPP) Survey reveals how European and USA experts rate major companies on protecting their data in 2024, compared to 2023 and 2022:</p>
+<p>Apple: ⬆️ Europe; ⬇️ USA
+Meta ⬆️ Europe; ⬇️ USA
+Microsoft ⬆️ Europe; ⬇️ USA
+Google 🟰 Europe; ⬇️ USA
+Visa 🟰 Europe; 🟰 USA
+Mastercard ⬆️ Europe; 🟰 USA
+Amazon ⬆️ Europe; ⬆️ USA</p>
+<p>At TAPP, we’ve been tracking privacy trends since 2022. This year’s results reflect how privacy remains a top concern, especially as companies continue to make headlines for their privacy practices.
+For example:
+Microsoft recently settled a $20 million case with the FTC over children’s privacy violations.
+Amazon has enhanced privacy controls for Alexa and Ring, demonstrating efforts to improve data protection.
+Google continues to face privacy challenges, including a settlement to remove personal data.</p>
+<p>While we can’t directly link such recent events to the expert ratings, they provide context for how privacy issues keep companies in the spotlight. The focus on privacy is growing, with firms constantly under scrutiny from consumers and regulators alike.</p>
+<p>🎓 TAPP is a research project conducted at the Universities of Maryland (UMD) 🇺🇸 and Munich (LMU) 🇩🇪.
+More information can be found at <a href="https://privacyperceptions.org">privacyperceptions.org</a>.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_how-are-big-tech-companies-performing-on-activity-7246996184211329024-EycZ?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗢𝘂𝗿 𝗪𝗮𝘃𝗲 𝟱 𝗼𝗳 𝘁𝗵𝗲 𝗧𝗿𝗮𝗻𝘀𝗮𝘁𝗹𝗮𝗻𝘁𝗶𝗰 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗲𝗿𝗰𝗲𝗽𝘁𝗶𝗼𝗻𝘀 𝘀𝘂𝗿𝘃𝗲𝘆 𝗶𝘀 𝗻𝗼𝘄 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 🎉</p>
+<p>If you have participated in one of the previous rounds, you received an email from us with your personal link. 📩</p>
+<p>If you are new, please join by using this link 👉 : <a href="https://lnkd.in/dY5R-3cV">https://lnkd.in/dY5R-3cV</a></p>
+<p>The survey will take approximately 5-7 minutes. We will ask you about the comprehensiveness of privacy regulations, including the EUAIAct, how different companies protect people's privacy, and how privacy rules are enforced.</p>
+<p>Your responses will help us continue monitoring privacy trends, building on data we've been collecting since 2022. You can explore previous results using our data visualization tool: <a href="https://lnkd.in/d3aN7i6w">https://lnkd.in/d3aN7i6w</a></p>
+<p>🎓 TAPP is a research project conducted at the Universities of Maryland (UMD) 🇺🇸 and Munich (LMU) 🇩🇪.
+More information can be found at <a href="https://privacyperceptions.org">privacyperceptions.org</a>.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_wave-5-tapp-survey-invite-activity-7230139921783525376-llNK?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>  <span class="font-bold mb-2 inline-block mr-2">Sonja Kellner</span> 2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗪𝗶𝗹𝗹 𝘁𝗵𝗲 𝗘𝗨 𝗔𝗜 𝗔𝗰𝘁 𝗯𝗲 𝗺𝗼𝗿𝗲 𝗹𝗶𝗸𝗲𝗹𝘆 𝘁𝗼 𝗲𝗻𝗮𝗯𝗹𝗲 𝗼𝗿 𝗵𝗶𝗻𝗱𝗲𝗿 𝗔𝗜 𝗶𝗻𝗻𝗼𝘃𝗮𝘁𝗶𝗼𝗻?</p>
+<p>This is one of the questions our current survey of the Transatlantic Privacy Perceptions (TAPP) research project is curious about.</p>
+<p>The survey will take approximately 5-7 minutes and we will ask you about the comprehensiveness of privacy regulations, including the EU AI Act, how different companies protect people's privacy, and how privacy rules are enforced. Please join by using this link 👉 <a href="https://lnkd.in/dykaGiHY">https://lnkd.in/dykaGiHY</a></p>
+<p>🎓 TAPP is a research project conducted at the Universities of Maryland (UMD) 🇺🇸 and Munich (LMU) 🇩🇪. More information on previous results can be found at <a href="https://lnkd.in/dKW4-g_S">https://lnkd.in/dKW4-g_S</a></p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/sonja-kellner_ai-privacy-euaiact-activity-7236341354874699776-q26T?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>  <span class="font-bold mb-2 inline-block mr-2">Sonja Kellner</span> 2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝗯𝗹𝗲 𝗔𝗜 - 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗮𝗻𝗱 𝗙𝘂𝘁𝘂𝗿𝗲 𝗜𝗺𝗽𝗹𝗲𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸𝘀 𝗮𝗻𝗱 𝗚𝘂𝗶𝗱𝗲𝗹𝗶𝗻𝗲𝘀</p>
+<p>In our recent survey, we delved into the adoption of Responsible AI practices across various fields. Let’s break down some of the findings:</p>
+<p>📊 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝗟𝗮𝗻𝗱𝘀𝗰𝗮𝗽𝗲:
+• Approximately 59% of respondents either lack guidelines for using AI responsibly or remain uncertain about their existence in the workplace.</p>
+<p>• Among the 82 participants:
+• 41% have already implemented clear guidelines for responsible AI.
+• 15% are unsure if such guidelines are in place.
+• 44% reported having no existing framework.</p>
+<p>🌟 𝗞𝗲𝘆 𝗧𝗮𝗸𝗲𝗮𝘄𝗮𝘆𝘀:
+• It’s encouraging that 41% of respondents already rely on clear guidelines for ensuring responsible AI implementation.
+• However, the fact that some individuals are unsure about guidelines in their workplace highlights the need for better communication and awareness regarding AI policies and practices.
+• Now, let’s focus on the 36 respondents without existing guidelines: Will they plan to implement a framework or guidelines in the future?</p>
+<p>🚀 𝗟𝗼𝗼𝗸𝗶𝗻𝗴 𝗔𝗵𝗲𝗮𝗱:
+• Yes! In the future, the majority intend to implement a framework or guidelines for future AI use in their work or will evaluate to implement one:
+• 44% plan to start using a framework in the future.
+• 33% are still undecided.
+• 22% won’t implement guidelines.</p>
+<p>These findings highlight the growing awareness and commitment toward responsible AI practices. Organizations are actively considering frameworks to guide their AI journey responsibly. It is also our aim from the research project team to help educate which frameworks/guidelines are well established, give practical guidance on how to implement them, discuss concerns, and raise awareness of the advantages of adopting Responsible AI frameworks.</p>
+<p>🤝 𝗖𝘂𝗿𝗶𝗼𝘂𝘀 𝘁𝗼 𝗹𝗲𝗮𝗿𝗻 𝗺𝗼𝗿𝗲?
+• Feel free to reach out to me or add any additional insights or context. There is the possibility to suggest new questions for upcoming waves as well.
+• TAPP is a research project conducted at the Universities Munich (LMU) 🇩🇪 and Maryland (UMD) 🇺🇸. Wave 4 summary: 14 questions, 82 respondents, including 48 participants from Europe, 29 from the USA, and 5 from other regions. 44% of respondents have worked in the privacy field for more than 10 years, 44% are from academia, and 15% are from the tech industry.
+• Further results from wave 4 will be shared on the research project website and the <a href="https://www.linkedin.com/company/tapp-insights/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_posts%3B3%2BI15tmES4q4zPtoU43dfw%3D%3D">LinkedIn group</a></p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/sonja-kellner_ai-responsible-guidelines-activity-7218550915052539904-Ej70?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>  <span class="font-bold mb-2 inline-block mr-2">Sonja Kellner</span> 2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>🚀 𝗔𝗜 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗠𝗮𝘁𝘁𝗲𝗿𝘀 - 𝗧𝗮𝗸𝗲 𝘁𝗵𝗲 𝟮-𝟱 𝗺𝗶𝗻𝘂𝘁𝗲𝘀 𝗦𝘂𝗿𝘃𝗲𝘆!</p>
+<p>The 𝗧𝗿𝗮𝗻𝘀𝗮𝘁𝗹𝗮𝗻𝘁𝗶𝗰 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗲𝗿𝗰𝗲𝗽𝘁𝗶𝗼𝗻𝘀 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 is about privacy and artificial intelligence (AI). Here’s why you should be part of it:</p>
+<ol>
+<li>𝗗𝗶𝘃𝗲𝗿𝘀𝗲 𝗣𝗲𝗿𝘀𝗽𝗲𝗰𝘁𝗶𝘃𝗲𝘀: We harvest and channel insights from stakeholders across Europe and the USA since 2022, creating a rich tapestry of privacy viewpoints in the context of AI.</li>
+<li>𝗗𝗮𝘁𝗮-𝗗𝗿𝗶𝘃𝗲𝗻 𝗗𝗲𝗯𝗮𝘁𝗲𝘀: Our surveys and interviews generate valuable data for public discourse and policy-making, specifically focusing on AI privacy.</li>
+<li>𝗚𝘂𝗶𝗱𝗶𝗻𝗴 𝗕𝗲𝘀𝘁 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗲𝘀: We identify role models and guide best practices for AI privacy.</li>
+</ol>
+<p>🔍 𝗢𝘂𝗿 𝗺𝗶𝘀𝘀𝗶𝗼𝗻: 𝗔𝗺𝗽𝗹𝗶𝗳𝘆𝗶𝗻𝗴 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗶𝗻 𝘁𝗵𝗲 𝗔𝗜 𝗘𝗿𝗮</p>
+<p>👉 Take the Survey and let’s shape the future of AI privacy together to build a ResponsibleAI environment! 🙌
+<a href="https://panel.privacyperceptions.org/jfe/form/SV_81EmcZlDm5IZp7o">https://panel.privacyperceptions.org/jfe/form/SV_81EmcZlDm5IZp7o</a></p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/sonja-kellner_privacy-ai-responsibleai-activity-7190627880849088512-iPX7?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗪𝗮𝘃𝗲 𝟰 𝗱𝗮𝘀𝗵𝗯𝗼𝗮𝗿𝗱 𝗶𝘀 𝗿𝗲𝗮𝗱𝘆! 🎉</p>
+<p><a href="https://privacyperceptions.org/results/">https://privacyperceptions.org/results/</a></p>
+<p>How does AI transform work practices and regulations? You can now check the data we collected and compare answers across the regions.</p>
+<p>🎓 TAPP is a research project conducted at the Universities of Maryland (UMD) 🇺🇸 and Munich (LMU) 🇩🇪. More information can be found at <a href="https://privacyperceptions.org">https://privacyperceptions.org</a>.
+Wave 4 summary: 14 questions, 82 respondents, including 48 participants from Europe, 29 from the USA, and 5 from other regions. 44% of respondents have worked in the privacy field for more than 10 years, 44% are from Academia, and 15% are from the Tech Industry.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_wave-4-dashboard-is-ready-httpslnkdin-activity-7219342430318264320-ktm6?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>🎉 𝗡𝗲𝘄 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 𝗟𝗮𝘂𝗻𝗰𝗵: 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗔𝗣𝗣 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗦𝘂𝗿𝘃𝗲𝘆 𝗗𝗮𝘁𝗮 &amp; 𝗖𝗼𝗹𝗹𝗮𝗯𝗼𝗿𝗮𝘁𝗲 𝘄𝗶𝘁𝗵 𝗨𝘀!</p>
+<p>We've developed an online platform offering full, free access to all the privacy survey data we have <a href="https://lnkd.in/d3aN7i6w">https://lnkd.in/d3aN7i6w</a></p>
+<p>Our tool features five tabs for easy navigation:
+🔴 Trend Analysis: Compare results to track opinion changes over time.
+🔴 Data Collection Waves: Three separate tabs, each dedicated to one of our data collection waves.
+🔴 Raw Data Access: contact us at info@privacyperceptions.org.</p>
+<p>Each data tab includes:
+• Visualizations of survey results for specific questions.
+• Two buttons per chart: one for a brief interpretation guide, and another detailing sample information.
+• An option to save charts for personal use.</p>
+<p>🔵 Do you think something is missing in the questions we ask? Join us as a knowledge partner and let's create the next wave together (we are aiming to go into the field in April 2024). Email us at &quot;<a href='mailto:info@privacyperceptions.org'>info@privacyperceptions.org</a>&quot;
+🔵 Do you like the questions we ask? Join us as an expert at <a href="https://lnkd.in/ex6PwjJD">https://lnkd.in/ex6PwjJD</a>
+🔵 Do you need help when using our data for your research, policy, advocacy, or business work? We will assist you. Email us at &quot;<a href='mailto:info@privacyperceptions.org'>info@privacyperceptions.org</a>&quot;</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_tapp-interactive-data-exploration-tool-activity-7156615207442604032-0QW7?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗖𝗼𝗻𝗰𝗲𝗿𝗻𝘀 𝗶𝗻 𝗔𝗜: 𝗞𝗲𝘆 𝗜𝗻𝘀𝗶𝗴𝗵𝘁𝘀 𝗳𝗿𝗼𝗺 𝗧𝗔𝗣𝗣 𝗪𝗮𝘃𝗲 𝟰</p>
+<p>Recent data from the Wave 4 Transatlantic Privacy Perceptions (TAPP) survey highlights the significant impact of privacy concerns on the use of AI tools among privacy experts.</p>
+<p>Approximately half of the respondents on both sides of the Atlantic indicated that privacy concerns substantially affect their AI usage.</p>
+<p>This underscores the urgent need for robust regulation, guidelines, frameworks, and best practices to ensure the safe development, adoption, procurement, and sale of AI technologies. Public and private organizations must be equipped with clear standards to navigate the complex landscape of AI deployment while safeguarding privacy.</p>
+<p>Moreover, providers of AI technologies should prioritize transparency about the privacy of the data collected through AI tools. Transparent data practices will build trust and allow users to understand how their data is being used and protected.</p>
+<p>🎓 TAPP is a research project conducted at the Universities of Maryland (UMD) 🇺🇸 and Munich (LMU) 🇩🇪. More information can be found at <a href="www.privacyperceptions.org">www.privacyperceptions.org</a>. 
+Wave 4 summary: 14 questions, 82 respondents, including 48 participants from Europe, 29 from the USA, and 5 from other regions. 44% of respondents have worked in the privacy field for more than 10 years, 44% are from Academia, and 15% are from the Tech Industry.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_recent-data-from-the-wave-4-transatlantic-activity-7215988048692449282-y6QF?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗧𝗵𝗲 𝗳𝗶𝗿𝘀𝘁 𝗿𝗲𝘀𝘂𝗹𝘁𝘀 𝗼𝗳 𝘁𝗵𝗲 𝗧𝗿𝗮𝗻𝘀𝗮𝘁𝗹𝗮𝗻𝘁𝗶𝗰 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗲𝗿𝗰𝗲𝗽𝘁𝗶𝗼𝗻𝘀 (𝗧𝗔𝗣𝗣) 𝗪𝗮𝘃𝗲 𝟰 𝗮𝗿𝗲 𝗵𝗲𝗿𝗲.</p>
+<p>72% of respondents reported using AI tools or systems in their work. However, this adoption rate is not uniform across all regions. In Europe, 80% of respondents use AI in their professional activities. Meanwhile, the United States lags behind, with 59% of respondents reporting AI usage, and other regions show a 60% adoption rate.</p>
+<p>Only 42% of respondents indicated that their organizations have frameworks or guidelines in place for using AI. A nearly equal proportion, 44%, reported the absence of such guidelines, while 15% remained unsure. In Europe, 46% of respondents confirmed the existence of AI frameworks within their organizations. This contrasts with the United States, where only 38% of respondents reported having such guidelines.</p>
+<p>🎓 TAPP is a research project conducted at the Universities of Maryland (UMD) 🇺🇸 and Munich (LMU) 🇩🇪. More information can be found at <a href="www.privacyperceptions.org">www.privacyperceptions.org</a>. Wave 4 summary: 14 questions, 82 respondents, including 48 participants from Europe, 29 from the USA, and 5 from other regions. 44% of respondents have worked in the privacy field for more than 10 years, 44% are from Academia, and 15% are from the Tech Industry.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_aigovernance-dataprivacy-privacy-activity-7206267320338493440-JEoT?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗖𝗵𝗼𝗼𝘀𝗶𝗻𝗴 𝘁𝗵𝗲 𝗥𝗶𝗴𝗵𝘁 𝗔𝗜 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸: 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗹 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝘃𝘀. 𝗘𝘅𝘁𝗲𝗿𝗻𝗮𝗹 𝗔𝗱𝗼𝗽𝘁𝗶𝗼𝗻</p>
+<p>In the TAPP Wave 4, we asked privacy experts from Europe and the USA to share which types of AI frameworks their companies and organizations have adopted.</p>
+<p>The responses revealed a diverse landscape: 1% of organizations rely on external frameworks 🌐, 29% have developed their own internal frameworks 🏠, and 9% use a combination of both internal standards and external guidelines 🔄.</p>
+<p>While neither approach is inherently superior, each presents unique advantages and disadvantages.</p>
+<p>🔵 Internal Frameworks, advantages: 
+• Customization: Tailored to the specific needs of the organization.
+• Collaboration and Industry Knowledge: Internal teams understand the organization’s context, culture, and requirements, enabling effective collaboration with other departments and stakeholders.</p>
+<p>🔴 Internal Frameworks, disadvantages:
+• Limited Skill Sets: Internal teams may lack specialized expertise in certain areas, such as synthetic data development or bias mitigation.
+• Resource Constraints: Developing and maintaining internal guidelines demands significant time, effort, and resources.
+• Bias and Blind Spots: Insufficient diversity within internal teams can lead to unintentional biases or blind spots in guidelines.
+• Lack of External Perspective: Limited external insights may hinder innovation.
+• Scalability Issues: Growing organizations might face challenges scaling these frameworks.</p>
+<p>🔵 External Frameworks, advantages 🌐
+• Standardization: Promotes industry-wide best practices.
+• Updated Guidelines: External frameworks are often maintained by interdisciplinary teams, ensuring they are up-to-date with the latest advancements and regulatory standards.
+• Expert Insights and Efficiency: Organizations can save time and resources by leveraging pre-developed guidelines.</p>
+<p>🔴 External Frameworks, disadvantages:
+• Fit and Nuance: External frameworks may not perfectly align with an organization's specific needs.
+• Alignment Challenges: Ensuring alignment between external guidelines and organizational goals can be challenging.
+• Dependency on Updates: The timeline of external updates might not always align with internal schedules.</p>
+<p>Some Recognized External AI Frameworks 🌟: <br>
+• OECD.AI AI Principles <br>
+• National Institute of Standards and Technology (NIST) AI risk management framework <br>
+• ISO <br>
+• IEEE <br>
+• Google Secure AI Framework <br>
+• Microsoft Responsible AI <br>
+• AI Governance Trustworthy AI Guidelines <br>
+• Montreal Declaration for Responsible AI <br>
+• AIGA AI Governance Framework <br>
+• IBM AI Governance <br></p>
+<p>✅ A hybrid approach could utilize the advantages of both internal and external AI guidelines and become a good starting point for many organizations.</p>
+<p>The decision to adopt internal, external, or hybrid AI frameworks is a strategic one, influenced by an organization’s unique context and goals. As the AI landscape continues to evolve, organizations will need to thoughtfully navigate these choices to utilize the full potential of AI technology.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_choosing-the-right-ai-framework-internal-activity-7208446386894172161-Cwmr?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>𝗪𝗮𝘃𝗲 𝟰 𝗜𝗻𝘀𝗶𝗴𝗵𝘁𝘀: 𝗢𝘂𝗿 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗘𝘅𝗽𝗲𝗿𝘁𝘀 𝗮𝗻𝗱 𝗣𝗮𝗿𝘁𝗶𝗰𝗶𝗽𝗮𝗻𝘁𝘀</p>
+<p>🙌 We have cleaned and preprocessed the data for Wave 4.</p>
+<p>🔢 Thank you to all 82 participants 🙏.</p>
+<p>✍ Half of our Wave 4 (57%) consists of stakeholders who have worked in the privacy field for over 6 years, and 44% have worked in the field for more than 10 years.</p>
+<p>✍ 44% of our respondents work in academia, 15% work in the Tech Industry, 11% work in the Non-tech Industry, 7% are privacy activists, and the rest work in NGOs, government, and law.</p>
+<p>View original Post on LinkedIn: <a href="https://www.linkedin.com/posts/tapp-insights_we-have-cleaned-and-preprocessed-the-data-activity-7204509571371950081-G-Wp?utm_source=share&amp;utm_medium=member_desktop">Link</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>  <span class="font-bold mb-2 inline-block mr-2">Olga Kononykhina</span> 2021-07-03</div> 
+                    
+                    <div><a class="text-right" href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;posts&#x2F;tapp-insights_activity-7221104622008995840-4O9c" target="_blank">View original Post</a> 
+                    </div>
+                          
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>⏰𝗟𝗲𝘁'𝘀 𝘁𝗮𝗹𝗸 𝗮𝗯𝗼𝘂𝘁 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝟭𝟬𝟭 𝗣𝗮𝗿𝘁 𝟮.</p>
+<p>Earlier, I discussed what control over your own data means for users and companies, why it is important for AI, and how you can have more control over the data you share with AI algorithms. You can find the post here: <a href="https://lnkd.in/deu48y_6">https://lnkd.in/deu48y_6</a></p>
+<p>Today, let's focus on privacy by design. According to our study, Transatlantic Privacy Perceptions (TAPP), 48% of our experts believe that privacy by design should be one of the guiding principles for developing AI frameworks and guidelines.</p>
+<p>🤔 What does privacy by design actually mean? It refers to integrating privacy into the design process from the very beginning, such as setting the highest privacy options as the default.</p>
+<p>✍ Why is privacy by design important for AI? We share a lot of information either directly with chatbots or through the data that companies have about our behavior, preferences, purchases, and so on, which is then used to train AI models and develop more advanced chatbots.</p>
+<p>☑ For users, privacy by design reduces the mental load when using apps.
+☑ Privacy by design significantly reduces the amount of user input data that a company can use for training AI or selling to another company to train their AI.
+☑ It potentially reduces data leaks (if nothing is collected in the first place).
+☑ While many companies discuss corporate digital responsibility 📣, privacy by design would be an important and impactful practice in this area.</p>
+<p>🚀 What does privacy by design look like? For example, if ChatGPT had a &quot;temporary chat&quot; option set as the default and users had to opt in to share their chat history for future training, that would be an example of privacy by design.</p>
+<p>If you want to learn more about the work we do at the Transatlantic Privacy Survey project, please visit: <a href="https://lnkd.in/dVctmQRp">https://lnkd.in/dVctmQRp</a></p>
+</div>
+                </div>
+                
+
+                
+                
+                <div class="p-8 border rounded-md mb-8 bg-white" >
+                    <div class="text-sm mb-8 inline-block flex justify-between">
+                        <div>   2021-07-03</div> 
+                      
+                    </div>
+                   
+                    <div class="text-base leading-tight "><p>⏰ Data collection for the Transatlantic Privacy Perceptions survey is halfway through. 
+As a privacy expert, your insights into the AI tools and frameworks your organization/company is currently using, as well as the governance and privacy structures in place, are invaluable. Your participation will provide essential data that helps shape the dialogue on AI governance and privacy on both sides of the Atlantic.</p>
+<p>Please, do not delay your participation. Your contribution is vital, and together, we will make a significant impact.</p>
+<p>⏱ The survey will only take 2-5 minutes of your time. </p>
+<p>Join here: <a href="https://lnkd.in/drDkthgp">https://lnkd.in/drDkthgp</a></p>
+<p>🎓 TAPP is a research project conducted at the Universities of Maryland (UMD) 🇺🇸 and Munich (LMU) 🇩🇪.</p>
+<p>📅 The results will be published in June (we are all about speedy science 😎). You can find our previous results here: <a href="https://lnkd.in/d3aN7i6w">https://lnkd.in/d3aN7i6w</a></p>
+</div>
+                </div>
+                
+
+                
+  
+       </div>
+        
+</div>
+   
+        
+        
+        
+        <div><h1><a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;news&#x2F;first-blog-post-1&#x2F;">Second blog post</a></h1><div>2003-02-21</div></div>
+        
+        <div><h1><a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;news&#x2F;first-blog-post&#x2F;">First blog post</a></h1><div>2003-02-21</div></div>
+        
+        
+        
+        
+        
+    <!--/div -->
+</main>
+<script>
+    //remove empty <p></p> generated by Zola
+     var paragraphs = document.querySelectorAll("main > p");
+       for (var i = 0; i < paragraphs.length; i++) {
+        if (paragraphs[i].innerHTML==""){
+            paragraphs[i].remove();
+        }
+        
+    }
+</script>
+
+  
+  <footer class="bg-white text-primary py-6 px-6 md:px-16 lg:px-24 xl:px-24 z-40" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+
+    <div class="flex flex-wrap justify-between items-start space-y-4 md:space-y-0"> <!-- flex-wrap added for wrapping -->
+        <!-- Contact Information -->
+        <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8"> <!-- Column on small screens, row on larger screens -->
+            <!-- Email Section -->
+            <a href="mailto:info@privacyperceptions.org" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fas fa-envelope mr-2"></i> <!-- Email icon -->
+                info@privacyperceptions.org
+            </a>
+
+            <!-- LinkedIn Section -->
+            <a href="https://www.linkedin.com/company/tapp-insights" target="_blank" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fab fa-linkedin mr-2"></i> <!-- LinkedIn icon -->
+                @tapp-insights
+            </a>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6"> <!-- Make links wrap and align properly -->
+            <a href="/privacy-policy" class="text-base font-semibold leading-tight hover:text-accent">Privacy Policy</a>
+            <a href="/legal-notice" class="text-base font-semibold leading-tight hover:text-accent">Legal Notice</a>
+            <a href="/data-protection" class="text-base font-semibold leading-tight hover:text-accent">Data Protection Statement</a>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-300 mt-6"></div>
+
+    <!-- Footer bottom -->
+    <div class="flex justify-between items-center pt-4">
+        <p class="text-sm leading-5">&copy; 2024– Transatlantic Privacy Perceptions. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

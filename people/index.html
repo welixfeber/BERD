@@ -1,0 +1,946 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    Transatlantic Privacy Perceptions · 
+        People
+      
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/assistant/assistant.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/fontawesome.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/solid.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/brands.css">
+
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<style type="text/tailwindcss">
+  html {
+  height: 100%;
+}
+
+body {
+  /* Vertical alignment of <header>, <main> and <footer> */
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.prose {
+  @apply text-base;
+}
+
+.container-width {
+  @apply w-full;
+}
+.container {
+  @apply container-width px-6 py-10 lg:px-8;
+}
+.container-mini {
+  @apply mx-auto w-full max-w-3xl;
+
+  .container-escape {
+    @apply lg:-ml-40 lg:-mr-40;
+  }
+}
+
+header {
+  font-weight: 500;
+}
+
+.prose {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+}
+h1{
+    @apply text-xl font-semibold my-6;
+}
+a,button{
+    transition:color 0.5s ease;
+}
+main a{
+    position:relative;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+
+
+li{
+    position:relative;
+    margin-left:28px;
+    }
+li::before{
+    content:'\2022';
+    position:absolute;
+    left:-28px;
+    line-height:1.6;
+    
+}
+main > *{
+    @apply py-24 px-6 md:px-16 lg:px-24 xl:px-24;
+}
+/*.padding-all{
+@apply px-6 md:px-16 lg:px-24 xl:px-24;
+}*/
+::selection{
+   @apply bg-accent;
+   @apply text-primary;
+}
+
+ p{
+   @apply mb-4 py-0 !important; 
+   @apply max-w-[1024px];
+}
+/*h3:after{
+    content:"";
+    position:absolute;
+    background: white;
+    display: block;
+    top:0;
+    bottom:0;
+    width:100vw;
+    left:0;
+    
+    z-index:0;
+    
+}
+h3{
+    z-index:1;
+}*/
+[popover]:not(:popover-open):not(dialog[open]) > div{
+    transition:all 0.6s ease;
+    transform: translateY(100%);
+ 
+}
+[popover] > div{
+    transition:all 0.6s ease;
+    transform: translateY(0%);
+ 
+}
+
+.inline-arrow {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+</style>
+<script>
+  /** @type {import('tailwindcss').Config} */
+tailwind.config = {
+  theme: {
+    fontSize: {
+      xs:'0.75rem',
+      sm: '1rem',
+      base: '1.5rem', 
+      lg: '2rem',
+      xl: '2.5rem',
+      '2xl': '3rem',
+      '3xl': '4rem',
+      '4xl':'6rem',
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'xxl': '1600px',
+      
+    },
+    extend: {
+      fontFamily: {
+        sans: ['"Assistant Variable"'],
+      },
+      colors: {
+        primary: '#071A2D',
+        secondary:'#FFD469',
+        grey:'#F5F5F5',
+        accent:'#FFD469',
+      },
+    },
+  },
+}
+
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;js/lettershuffler.js"></script>
+<style>
+    .test{
+        display:inline-block;
+    }
+    .test span{
+        display:inline-block;
+        transform:rotateX(0deg);
+        transition:all 0.2s ease;
+        color:rgb(255 212 105);
+    }
+     .test span.active{
+        transform:rotateX(90deg);
+        
+    }
+</style>
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+</head>
+<body class="!block">
+  
+  <header class="fixed w-full z-10 top-0">
+    
+    <nav class="main-nav mx-auto flex absolute container-width  justify-between  pt-8 lg:pt-10 pb-6  px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">TAPP panel logo</span>
+            
+            <span class=" inline-block">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_1.svg">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_2.svg">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_3.svg">
+            </span> 
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-semibold inline-flex items-center justify-center rounded-md p-2.5 text-white hover:text-primary">
+                <span class="sr-only">Open main menu</span>
+                MENU
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            <a href="https://privacyperceptions.org/about/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                About
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https://privacyperceptions.org/results/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                DataViz
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/findings/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                Findings
+            </a>
+            
+            
+            <a href="#" class="text-base leading-7 font-semibold text-accent hover:text-primary">
+                People
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/faq/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                FAQ
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+        </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div popover id="global-menu" class="bg-transparent" role="dialog" aria-modal="true">
+        <div class="fixed flex flex-col items-center justify-center text-center inset-y-0 right-0 z-10 w-full overflow-y-auto bg-grey px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="absolute top-4 right-4">
+
+                <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-semibold rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="py-6">
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/about/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            About
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/results/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            DataViz
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/findings/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            Findings
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="#" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-accent">
+                            People
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/faq/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            FAQ
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold   text-gray-900 hover:text-accent">News</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="float-nav" class="over z-30 fixed w-full top-0 -translate-y-full bg-white transition-all duration-700">
+    <nav class=" mx-auto flex relative container-width items-center justify-between  pt-6 pb-6 px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">TAPP panel logo</span>
+            
+                <img class="h-8 w-auto" src="https://privacyperceptions.org/assets/logo_full.svg" alt="TAPP panel logo">
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="text-primary -m-2.5 text-base font-semibold inline-flex items-center justify-center rounded-md p-2.5 ">
+                <span class="sr-only">Open main menu</span>
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+                MENU
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            <a href="https://privacyperceptions.org/about/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                About
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https://privacyperceptions.org/results/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                DataViz
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/findings/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                Findings
+            </a>
+            
+            
+            <a href="#" class="text-base leading-7 font-semibold  text-accent hover:text-accent">
+                People
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/faq/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                FAQ
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+        </div>
+    </nav>
+</div>
+<script>
+  
+     var lastScrollTop;
+    
+       window.onscroll = function() {dropDownMenu();};
+    function dropDownMenu(){
+        
+        if (window.scrollY > document.getElementsByClassName("hero")[0].offsetHeight - 82){
+            document.getElementById("float-nav").classList.remove("-translate-y-full");
+            //document.getElementById("float-nav").classList.add("translate-y-0");
+            console.log("remove");
+        }else{
+            document.getElementById("float-nav").classList.add("-translate-y-full");
+            //document.getElementById("float-nav").classList.remove("translate-y-0");
+        }
+        
+        
+    }
+</script>
+
+
+  <!--main class=""><!--class='container'*/-->
+</main-->
+    
+
+
+    
+        
+        
+        
+    
+    
+    
+        
+    
+    
+    
+    
+        
+    
+
+<div
+    class="hero text-white flex fixed w-full -z-10 top-0 h-[260px] items-end "
+    style="background: url(https://privacyperceptions.org/assets/hero.png);background-size:cover;">
+    
+    <h1 class="text-xl !font-normal  pt-8 pb-8 px-6 md:px-16 lg:px-24 xl:px-24 m-0">People</h1>
+    
+    
+        <div class="ml-auto pt-8 pb-8 px-6 md:px-16 lg:px-24 xl:px-24 flex gap-x-12 flex-wrap justify-end">
+        
+       <a  class="text-base whitespace-nowrap font-semibold " href="#team">Team</a>
+        
+       <a  class="text-base whitespace-nowrap font-semibold " href="#topic-partner">Topic Partner</a>
+        
+        </div>
+    
+    
+    
+</div>
+<main class="mt-[260px] bg-white z-20 text-base top-0 relative"> 
+    <!--div class="-mt-4"-->
+        
+        <div class="flex flex-wrap  bg-accent pl-4 sm:pl-6 md:pl-8 lg:pl-12">
+    
+    <h3 class="text-xl block mb-12 w-full pl-4 sm:pl-6 md:pl-8 lg:pl-12">Team</h3>
+    
+    
+    <div class="text-base leading-tight w-full mb-10 pl-4 sm:pl-6 md:pl-8 lg:pl-12"><p>The Core Scientific Team of TAPP comprises leading researchers and scholars specializing in AI, digital privacy, data analysis, and survey methodology.</p>
+</div>
+</div>
+<p><div  class="relative !p-0"> 
+    <div id="team" class="absolute -top-[80px]">
+    </div>
+</div>
+
+
+
+<div class="container-escape  flex flex-wrap">
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Principal investigator
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Brian.dc9f98d2c5ac940a.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Brian.d564c0ab6b7f4c6c.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Brian.d564c0ab6b7f4c6c.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Brian Kim
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                University of Maryland
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Principal investigator
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Frauke.3f38f37bb308ac95.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Frauke.6df68a8d9700ba0a.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Frauke.6df68a8d9700ba0a.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Frauke Kreuter
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                University of Maryland &amp; LMU Munich
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Principal investigator
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;kern.97d2f889fd495ea9.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;kern.fecf99094c37bebe.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;kern.fecf99094c37bebe.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Christoph Kern
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                LMU MUNICH
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Principal investigator
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Jessica.4c7c75130c15be08.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Jessica.dc2207023714dc83.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Jessica.dc2207023714dc83.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Jessica Vitak
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                University of Maryland
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Principal investigator
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Stanley.819d632eb8b7491b.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Stanley.ac94c44bc690529f.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Stanley.ac94c44bc690529f.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Stanley Presser
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                University of Maryland
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Principal investigator
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Katie.3aedcb77a8f8eb7d.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Katie.1a5d9b6f0163f63e.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Katie.1a5d9b6f0163f63e.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Katie Shilton
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                University of Maryland
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Isabela.7d6474d67d518468.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Isabela.1dfd8ed4d004ae5c.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Isabela.1dfd8ed4d004ae5c.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Isabela Coelho
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                University of Maryland
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Wiebke.417c9178da4c3a94.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Wiebke.2e74165546999892.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Wiebke.2e74165546999892.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Wiebke Weber
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                LMU MUNICH
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Sonja.6f8edbddd8345920.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Sonja.79ae26912bbd2e2b.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Sonja.79ae26912bbd2e2b.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Sonja Kellner
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                LMU Munich &amp; Microsoft
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Mariel.ce1532465faf82e5.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Mariel.f5bd0b15b431e7f6.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Mariel.f5bd0b15b431e7f6.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Mariel McKone Leonard
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Srija.5f3b148ce0820e01.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Srija.b1ccb0948c290b6e.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Srija.b1ccb0948c290b6e.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Srija Mukhopadhyay
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                LMU Munich
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Trent.73d3896eb5bbac51.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Trent.d492bf3b89dbadeb.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Trent.d492bf3b89dbadeb.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Trent Buskirk
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                Bowling Green State University
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Thomas.ac4afdcc4a38acf4.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Thomas.39b5fa740107e8d4.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Thomas.39b5fa740107e8d4.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Thomas Fetzer
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                University of Mannheim
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Olga.577bbb07d4d2a687.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Olga.f9cf2d5571be1fa0.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Olga.f9cf2d5571be1fa0.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Olga Kononykhina
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                LMU Munich
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Aida.828054bd2983869f.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Aida.719944cca983a09f.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Aida.719944cca983a09f.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Aida Kreider
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                LMU Munich
+            </div>
+          
+            
+        </div>
+    </div>
+    
+    <div class="text-left px-2 my-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4   ">
+        <div class="p-6 lg:p-8 bg-grey h-full flex flex-col">
+            <div class="text-sm uppercase font-semibold text-balance mb-4">
+                Team
+            </div>
+             
+  <img
+    
+    srcset="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Anna.120ebbaa4745f85b.jpg 320w, https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Anna.970a8bc2b1dac20e.jpg 640w"
+    src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;processed_images&#x2F;Anna.970a8bc2b1dac20e.jpg"
+    class="rounded-full  mx-auto my-2"
+    width='640' height='640'
+  >
+
+
+            <div class="mt-4 text-lg  leading-none">
+                Anna Fuchs
+            </div>
+            <div class="text-sm font-semibold uppercase leading-tight text-balance mt-4 ">
+                LMU Munich
+            </div>
+          
+            
+        </div>
+    </div>
+    </div>
+
+<div  class="relative !p-0"> 
+    <div id="topic-partner" class="absolute -top-[80px]">
+    </div>
+</div>
+
+<div class="flex flex-wrap  bg-accent pl-4 sm:pl-6 md:pl-8 lg:pl-12">
+    
+    <h3 class="text-xl block mb-12 w-full pl-4 sm:pl-6 md:pl-8 lg:pl-12">Topic Partner</h3>
+    
+    
+    <div class="text-base leading-tight w-full mb-10 pl-4 sm:pl-6 md:pl-8 lg:pl-12"><p>Topic Partners are esteemed experts in AI and digital privacy who serve on a one-year term, actively participating in the selection of topics and questions posed to the TAPP Panel. Their invaluable contributions ensure that our surveys remain relevant and impactful, reflecting the latest trends and concerns in the field.</p>
+</div>
+</div>
+</p>
+
+        
+        
+    <!--/div -->
+</main>
+<script>
+    //remove empty <p></p> generated by Zola
+     var paragraphs = document.querySelectorAll("main > p");
+       for (var i = 0; i < paragraphs.length; i++) {
+        if (paragraphs[i].innerHTML==""){
+            paragraphs[i].remove();
+        }
+        
+    }
+</script>
+
+  
+  <footer class="bg-white text-primary py-6 px-6 md:px-16 lg:px-24 xl:px-24 z-40" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+
+    <div class="flex flex-wrap justify-between items-start space-y-4 md:space-y-0"> <!-- flex-wrap added for wrapping -->
+        <!-- Contact Information -->
+        <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8"> <!-- Column on small screens, row on larger screens -->
+            <!-- Email Section -->
+            <a href="mailto:info@privacyperceptions.org" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fas fa-envelope mr-2"></i> <!-- Email icon -->
+                info@privacyperceptions.org
+            </a>
+
+            <!-- LinkedIn Section -->
+            <a href="https://www.linkedin.com/company/tapp-insights" target="_blank" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fab fa-linkedin mr-2"></i> <!-- LinkedIn icon -->
+                @tapp-insights
+            </a>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6"> <!-- Make links wrap and align properly -->
+            <a href="/privacy-policy" class="text-base font-semibold leading-tight hover:text-accent">Privacy Policy</a>
+            <a href="/legal-notice" class="text-base font-semibold leading-tight hover:text-accent">Legal Notice</a>
+            <a href="/data-protection" class="text-base font-semibold leading-tight hover:text-accent">Data Protection Statement</a>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-300 mt-6"></div>
+
+    <!-- Footer bottom -->
+    <div class="flex justify-between items-center pt-4">
+        <p class="text-sm leading-5">&copy; 2024– Transatlantic Privacy Perceptions. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

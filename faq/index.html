@@ -1,0 +1,714 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    Transatlantic Privacy Perceptions · 
+        FAQ
+      
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/assistant/assistant.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/fontawesome.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/solid.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/brands.css">
+
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<style type="text/tailwindcss">
+  html {
+  height: 100%;
+}
+
+body {
+  /* Vertical alignment of <header>, <main> and <footer> */
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.prose {
+  @apply text-base;
+}
+
+.container-width {
+  @apply w-full;
+}
+.container {
+  @apply container-width px-6 py-10 lg:px-8;
+}
+.container-mini {
+  @apply mx-auto w-full max-w-3xl;
+
+  .container-escape {
+    @apply lg:-ml-40 lg:-mr-40;
+  }
+}
+
+header {
+  font-weight: 500;
+}
+
+.prose {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+}
+h1{
+    @apply text-xl font-semibold my-6;
+}
+a,button{
+    transition:color 0.5s ease;
+}
+main a{
+    position:relative;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+
+
+li{
+    position:relative;
+    margin-left:28px;
+    }
+li::before{
+    content:'\2022';
+    position:absolute;
+    left:-28px;
+    line-height:1.6;
+    
+}
+main > *{
+    @apply py-24 px-6 md:px-16 lg:px-24 xl:px-24;
+}
+/*.padding-all{
+@apply px-6 md:px-16 lg:px-24 xl:px-24;
+}*/
+::selection{
+   @apply bg-accent;
+   @apply text-primary;
+}
+
+ p{
+   @apply mb-4 py-0 !important; 
+   @apply max-w-[1024px];
+}
+/*h3:after{
+    content:"";
+    position:absolute;
+    background: white;
+    display: block;
+    top:0;
+    bottom:0;
+    width:100vw;
+    left:0;
+    
+    z-index:0;
+    
+}
+h3{
+    z-index:1;
+}*/
+[popover]:not(:popover-open):not(dialog[open]) > div{
+    transition:all 0.6s ease;
+    transform: translateY(100%);
+ 
+}
+[popover] > div{
+    transition:all 0.6s ease;
+    transform: translateY(0%);
+ 
+}
+
+.inline-arrow {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+</style>
+<script>
+  /** @type {import('tailwindcss').Config} */
+tailwind.config = {
+  theme: {
+    fontSize: {
+      xs:'0.75rem',
+      sm: '1rem',
+      base: '1.5rem', 
+      lg: '2rem',
+      xl: '2.5rem',
+      '2xl': '3rem',
+      '3xl': '4rem',
+      '4xl':'6rem',
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'xxl': '1600px',
+      
+    },
+    extend: {
+      fontFamily: {
+        sans: ['"Assistant Variable"'],
+      },
+      colors: {
+        primary: '#071A2D',
+        secondary:'#FFD469',
+        grey:'#F5F5F5',
+        accent:'#FFD469',
+      },
+    },
+  },
+}
+
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;js/lettershuffler.js"></script>
+<style>
+    .test{
+        display:inline-block;
+    }
+    .test span{
+        display:inline-block;
+        transform:rotateX(0deg);
+        transition:all 0.2s ease;
+        color:rgb(255 212 105);
+    }
+     .test span.active{
+        transform:rotateX(90deg);
+        
+    }
+</style>
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+</head>
+<body class="!block">
+  
+  <header class="fixed w-full z-10 top-0">
+    
+    <nav class="main-nav mx-auto flex absolute container-width  justify-between  pt-8 lg:pt-10 pb-6  px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">TAPP panel logo</span>
+            
+            <span class=" inline-block">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_1.svg">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_2.svg">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_3.svg">
+            </span> 
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-semibold inline-flex items-center justify-center rounded-md p-2.5 text-white hover:text-primary">
+                <span class="sr-only">Open main menu</span>
+                MENU
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            <a href="https://privacyperceptions.org/about/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                About
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https://privacyperceptions.org/results/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                DataViz
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/findings/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                Findings
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/people/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                People
+            </a>
+            
+            
+            <a href="#" class="text-base leading-7 font-semibold text-accent hover:text-primary">
+                FAQ
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+        </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div popover id="global-menu" class="bg-transparent" role="dialog" aria-modal="true">
+        <div class="fixed flex flex-col items-center justify-center text-center inset-y-0 right-0 z-10 w-full overflow-y-auto bg-grey px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="absolute top-4 right-4">
+
+                <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-semibold rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="py-6">
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/about/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            About
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/results/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            DataViz
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/findings/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            Findings
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/people/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            People
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="#" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-accent">
+                            FAQ
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold   text-gray-900 hover:text-accent">News</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="float-nav" class="over z-30 fixed w-full top-0 -translate-y-full bg-white transition-all duration-700">
+    <nav class=" mx-auto flex relative container-width items-center justify-between  pt-6 pb-6 px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">TAPP panel logo</span>
+            
+                <img class="h-8 w-auto" src="https://privacyperceptions.org/assets/logo_full.svg" alt="TAPP panel logo">
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="text-primary -m-2.5 text-base font-semibold inline-flex items-center justify-center rounded-md p-2.5 ">
+                <span class="sr-only">Open main menu</span>
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+                MENU
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            <a href="https://privacyperceptions.org/about/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                About
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https://privacyperceptions.org/results/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                DataViz
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/findings/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                Findings
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/people/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                People
+            </a>
+            
+            
+            <a href="#" class="text-base leading-7 font-semibold  text-accent hover:text-accent">
+                FAQ
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+        </div>
+    </nav>
+</div>
+<script>
+  
+     var lastScrollTop;
+    
+       window.onscroll = function() {dropDownMenu();};
+    function dropDownMenu(){
+        
+        if (window.scrollY > document.getElementsByClassName("hero")[0].offsetHeight - 82){
+            document.getElementById("float-nav").classList.remove("-translate-y-full");
+            //document.getElementById("float-nav").classList.add("translate-y-0");
+            console.log("remove");
+        }else{
+            document.getElementById("float-nav").classList.add("-translate-y-full");
+            //document.getElementById("float-nav").classList.remove("translate-y-0");
+        }
+        
+        
+    }
+</script>
+
+
+  <!--main class=""><!--class='container'*/-->
+</main-->
+    
+
+
+    
+        
+        
+        
+    
+    
+    
+    
+    
+    
+        
+    
+
+<div
+    class="hero text-white flex fixed w-full -z-10 top-0 h-[260px] items-end "
+    style="background: url(https://privacyperceptions.org/assets/hero.png);background-size:cover;">
+    
+    <h1 class="text-xl !font-normal  pt-8 pb-8 px-6 md:px-16 lg:px-24 xl:px-24 m-0">FAQ</h1>
+    
+    
+    
+    
+</div>
+<main class="mt-[260px] bg-white z-20 text-base top-0 relative"> 
+    <!--div class="-mt-4"-->
+        
+        
+<div class="flex flex-wrap  ">
+    
+    
+    
+            <div class="container-escape max-w-[960px]">
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        Why did you ask me to be part of the panel?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            We, or someone who knows you professionally, thought that you would provide a unique voice in the TAPP panel!
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        What will be done with my responses?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            Data collected through the TAPP panel survey is protected in line with <a href="https://www.qualtrics.com/privacy-statement/">EU GDPR</a> and by the UMD research ethics committee (IRB). In line with the open science movement, we will make selected survey data available for research purposes. No identifying information will be contained in this dataset.<br><br>Data published in reports are aggregated and will not individually identify you or your responses.<br><br>In line with the open science movement, we will make selected survey data available for research purposes. No identifying information will be contained in this dataset.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        What can I do to be more involved in this project?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            Use our data. Submit a question or topic to ask our respondents.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        Who should I contact with questions about this project?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            To learn more about TAPP panel participation, please refer to the FAQs or <a href="mailto:irb@umd.edu">email</a>.<br>If you have questions about your rights as a research participant or wish to report a research-related injury, please contact with reference to IRB No. 1934146-4:<br><br>University of Maryland College Park<br>Institutional Review Board Office<br>1204 Marie Mount Hall<br>College Park, Maryland, 20742<br>E-mail: <a href="mailto:irb@umd.edu">irb@umd.edu</a><br>Telephone: +1 301-405-0678<br><br>For more information regarding your rights as a research participant, please visit the <a href="https://research.umd.edu/research-resources/research-compliance/institutional-review-board-irb/research-participants">UMD IRB FAQs</a>.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        Who is funding this research?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            TAPP is supported by research grants from Meta, the U.S. Census Bureau, and the Volkswagen Foundation. Research is being conducted entirely independently of any funding sources.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        What is a panelist?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            A panelist is anyone who participates in our survey and agrees to be contacted additionally throughout the year to participate in further waves.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        Who can answer the questionnaire?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            Anyone aged 18+ living or working in countries/regions on either side of the Atlantic Ocean who is passionate and knowledgeable about digital privacy is invited to join the panel.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        Can I suggest a question for the next questionnaire?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            Of course, send us an email at <a href="mailto:info@privacyperceptions.org">info@privacyperceptions.org</a>.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        How can I use the data?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            We have transferred the anonymized data from our study to GESIS (Leibniz Institute for the Social Sciences), a German institute that handles social science data. <a href="https://doi.org/10.4232/1.14198/">Link to data</a>.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        How many questions are in the questionnaire?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            The number of questions varies by survey wave and questionnaire topic. Regardless of the topic, we keep the questionnaires short, so that participating takes no more than 5-10 minutes of your time.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        How can I participate?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            Send us an email at <a href="mailto:info@privacyperceptions.org">info@privacyperceptions.org</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        I’ve received a TAPP invitation. Now what?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            Our panel is unique in regularly bringing together the opinions of a diverse set of privacy experts from a variety of industries and countries. Participating gives you the opportunity to raise awareness about the privacy issues you care about and contribute to <a href="@/results/index.md"><svg width="20" height="20" style="display: inline-block; vertical-align: middle; margin-right: 5px;" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0627 16.6355L11.1259 14.6987L15.9093 9.91526L11.0838 5.08986L13.0367 3.13696L19.799 9.89922L13.0627 16.6355Z" fill="#071A2D"/><path d="M17.8282 8.45024L1.37982 8.51807L1.36848 11.2685L17.8168 11.2007L17.8282 8.45024Z" fill="#071A2D"/></svg>scientific research</a>. To get started, simply click 'Start survey' in your invitation email!
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        What is TAPP’s privacy and data protection policy?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            We take privacy and <a href="@/data_protection/index.md"><svg width="20" height="20" style="display: inline-block; vertical-align: middle; margin-right: 5px;" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.0627 16.6355L11.1259 14.6987L15.9093 9.91526L11.0838 5.08986L13.0367 3.13696L19.799 9.89922L13.0627 16.6355Z" fill="#071A2D"/><path d="M17.8282 8.45024L1.37982 8.51807L1.36848 11.2685L17.8168 11.2007L17.8282 8.45024Z" fill="#071A2D"/></svg>data protection</a> seriously. Below is our data protection statement. This statement is also available from within the current TAPP panel survey.
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion text-left px-1 my-2  relative">
+
+                    <div class="visible-text font-semibold"> 
+                        I don’t want to participate anymore. How can I leave the panel?
+                    </div>
+                    <div class="hidden-text  transistion-all h-0 duration-500 ease-linear overflow-hidden mt-4 mb-8 ">
+                        <div class="inner-text">
+                            We’re sorry to see you go! Contact us at <a href="mailto:info@privacyperceptions.org">info@privacyperceptions.org</a> to request removal from our invitation list. Please be aware that as all data is collected anonymously, we are not able to remove your individual data from previous datasets.
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            </div>
+            <style>
+                .accordion:before {
+                    content: "+";
+                    position: absolute;
+                    font-weight: 600;
+                    font-size: 35px;
+                    top: -8px;
+                    right: 0;
+                    transition: all 0.8s ease;
+                    z-index: -1;
+                }
+                .accordion.open:before {
+                    transform: rotateZ(135deg);
+                }
+            </style>
+            <script>
+
+                const collection = document.getElementsByClassName("visible-text");
+                for (let i = 0; i < collection.length; i++) {
+                    collection[i].onclick = toggleAccordion;
+                    //collection[i].onclick=function(){console.log("hei");};
+                }
+                function toggleAccordion() {
+                 console.log("Hello");
+                    acc=this.parentElement;
+                            acc.classList.toggle("open");
+                    if (acc.classList.contains('open')) {
+                    
+                        acc.getElementsByClassName("hidden-text")[0].style.height = acc.getElementsByClassName("inner-text")[0].offsetHeight + "px";
+                    } else {
+                        acc.getElementsByClassName("hidden-text")[0].style.height = 0;
+                    }
+                }
+            </script>
+
+        
+        
+    <!--/div -->
+</main>
+<script>
+    //remove empty <p></p> generated by Zola
+     var paragraphs = document.querySelectorAll("main > p");
+       for (var i = 0; i < paragraphs.length; i++) {
+        if (paragraphs[i].innerHTML==""){
+            paragraphs[i].remove();
+        }
+        
+    }
+</script>
+
+  
+  <footer class="bg-white text-primary py-6 px-6 md:px-16 lg:px-24 xl:px-24 z-40" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+
+    <div class="flex flex-wrap justify-between items-start space-y-4 md:space-y-0"> <!-- flex-wrap added for wrapping -->
+        <!-- Contact Information -->
+        <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8"> <!-- Column on small screens, row on larger screens -->
+            <!-- Email Section -->
+            <a href="mailto:info@privacyperceptions.org" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fas fa-envelope mr-2"></i> <!-- Email icon -->
+                info@privacyperceptions.org
+            </a>
+
+            <!-- LinkedIn Section -->
+            <a href="https://www.linkedin.com/company/tapp-insights" target="_blank" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fab fa-linkedin mr-2"></i> <!-- LinkedIn icon -->
+                @tapp-insights
+            </a>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6"> <!-- Make links wrap and align properly -->
+            <a href="/privacy-policy" class="text-base font-semibold leading-tight hover:text-accent">Privacy Policy</a>
+            <a href="/legal-notice" class="text-base font-semibold leading-tight hover:text-accent">Legal Notice</a>
+            <a href="/data-protection" class="text-base font-semibold leading-tight hover:text-accent">Data Protection Statement</a>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-300 mt-6"></div>
+
+    <!-- Footer bottom -->
+    <div class="flex justify-between items-center pt-4">
+        <p class="text-sm leading-5">&copy; 2024– Transatlantic Privacy Perceptions. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

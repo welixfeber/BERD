@@ -1,0 +1,568 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    Transatlantic Privacy Perceptions · 
+        Privacy Policy
+      
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/assistant/assistant.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/fontawesome.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/solid.css">
+<link rel="stylesheet" href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;assets/fonts/fa/css/brands.css">
+
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<style type="text/tailwindcss">
+  html {
+  height: 100%;
+}
+
+body {
+  /* Vertical alignment of <header>, <main> and <footer> */
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.prose {
+  @apply text-base;
+}
+
+.container-width {
+  @apply w-full;
+}
+.container {
+  @apply container-width px-6 py-10 lg:px-8;
+}
+.container-mini {
+  @apply mx-auto w-full max-w-3xl;
+
+  .container-escape {
+    @apply lg:-ml-40 lg:-mr-40;
+  }
+}
+
+header {
+  font-weight: 500;
+}
+
+.prose {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+}
+h1{
+    @apply text-xl font-semibold my-6;
+}
+a,button{
+    transition:color 0.5s ease;
+}
+main a{
+    position:relative;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+
+
+li{
+    position:relative;
+    margin-left:28px;
+    }
+li::before{
+    content:'\2022';
+    position:absolute;
+    left:-28px;
+    line-height:1.6;
+    
+}
+main > *{
+    @apply py-24 px-6 md:px-16 lg:px-24 xl:px-24;
+}
+/*.padding-all{
+@apply px-6 md:px-16 lg:px-24 xl:px-24;
+}*/
+::selection{
+   @apply bg-accent;
+   @apply text-primary;
+}
+
+ p{
+   @apply mb-4 py-0 !important; 
+   @apply max-w-[1024px];
+}
+/*h3:after{
+    content:"";
+    position:absolute;
+    background: white;
+    display: block;
+    top:0;
+    bottom:0;
+    width:100vw;
+    left:0;
+    
+    z-index:0;
+    
+}
+h3{
+    z-index:1;
+}*/
+[popover]:not(:popover-open):not(dialog[open]) > div{
+    transition:all 0.6s ease;
+    transform: translateY(100%);
+ 
+}
+[popover] > div{
+    transition:all 0.6s ease;
+    transform: translateY(0%);
+ 
+}
+
+.inline-arrow {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+</style>
+<script>
+  /** @type {import('tailwindcss').Config} */
+tailwind.config = {
+  theme: {
+    fontSize: {
+      xs:'0.75rem',
+      sm: '1rem',
+      base: '1.5rem', 
+      lg: '2rem',
+      xl: '2.5rem',
+      '2xl': '3rem',
+      '3xl': '4rem',
+      '4xl':'6rem',
+    },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      'xxl': '1600px',
+      
+    },
+    extend: {
+      fontFamily: {
+        sans: ['"Assistant Variable"'],
+      },
+      colors: {
+        primary: '#071A2D',
+        secondary:'#FFD469',
+        grey:'#F5F5F5',
+        accent:'#FFD469',
+      },
+    },
+  },
+}
+
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;js/lettershuffler.js"></script>
+<style>
+    .test{
+        display:inline-block;
+    }
+    .test span{
+        display:inline-block;
+        transform:rotateX(0deg);
+        transition:all 0.2s ease;
+        color:rgb(255 212 105);
+    }
+     .test span.active{
+        transform:rotateX(90deg);
+        
+    }
+</style>
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+</head>
+<body class="!block">
+  
+  <header class="fixed w-full z-10 top-0">
+    
+    <nav class="main-nav mx-auto flex absolute container-width  justify-between  pt-8 lg:pt-10 pb-6  px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">TAPP panel logo</span>
+            
+            <span class=" inline-block">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_1.svg">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_2.svg">
+                <img class="inline-block h-8 mb-2" src="https://privacyperceptions.org/assets/tapp_logo_white_3.svg">
+            </span> 
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-semibold inline-flex items-center justify-center rounded-md p-2.5 text-white hover:text-primary">
+                <span class="sr-only">Open main menu</span>
+                MENU
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            <a href="https://privacyperceptions.org/about/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                About
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https://privacyperceptions.org/results/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                DataViz
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/findings/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                Findings
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/people/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                People
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/faq/" class="text-base leading-7 font-semibold text-white hover:text-primary">
+                FAQ
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+        </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div popover id="global-menu" class="bg-transparent" role="dialog" aria-modal="true">
+        <div class="fixed flex flex-col items-center justify-center text-center inset-y-0 right-0 z-10 w-full overflow-y-auto bg-grey px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="absolute top-4 right-4">
+
+                <button type="button" popovertarget="global-menu" class="-m-2.5 text-base font-semibold rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="py-6">
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/about/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            About
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/results/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            DataViz
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/findings/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            Findings
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/people/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            People
+                        </a>
+                        
+                        
+                        
+                        
+                        <a href="https://privacyperceptions.org/faq/" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold text-gray-900 hover:text-accent">
+                            FAQ
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="-mx-3 block rounded-lg  px-4 py-3 text-base leading-7 font-semibold   text-gray-900 hover:text-accent">News</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="float-nav" class="over z-30 fixed w-full top-0 -translate-y-full bg-white transition-all duration-700">
+    <nav class=" mx-auto flex relative container-width items-center justify-between  pt-6 pb-6 px-6 md:px-16 lg:px-24 xl:px-24" aria-label="Global">
+        <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;" class="-m-1.5 lg:-ml-9 p-1.5">
+            <span class="sr-only">TAPP panel logo</span>
+            
+                <img class="h-8 w-auto" src="https://privacyperceptions.org/assets/logo_full.svg" alt="TAPP panel logo">
+            
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" popovertarget="global-menu" class="text-primary -m-2.5 text-base font-semibold inline-flex items-center justify-center rounded-md p-2.5 ">
+                <span class="sr-only">Open main menu</span>
+                <!--svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg-->
+                MENU
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            
+            
+            
+            <a href="https://privacyperceptions.org/about/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                About
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https://privacyperceptions.org/results/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                DataViz
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/findings/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                Findings
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/people/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                People
+            </a>
+            
+            
+            <a href="https://privacyperceptions.org/faq/" class="text-base leading-7 font-semibold  text-primary hover:text-accent">
+                FAQ
+            </a>
+            
+            
+            
+            
+            
+            
+            <a href="https:&#x2F;&#x2F;privacyperceptions.org&#x2F;/news" class="text-base leading-7 font-semibold text-white hover:text-primary">News</a>
+        </div>
+    </nav>
+</div>
+<script>
+  
+     var lastScrollTop;
+    
+       window.onscroll = function() {dropDownMenu();};
+    function dropDownMenu(){
+        
+        if (window.scrollY > document.getElementsByClassName("hero")[0].offsetHeight - 82){
+            document.getElementById("float-nav").classList.remove("-translate-y-full");
+            //document.getElementById("float-nav").classList.add("translate-y-0");
+            console.log("remove");
+        }else{
+            document.getElementById("float-nav").classList.add("-translate-y-full");
+            //document.getElementById("float-nav").classList.remove("translate-y-0");
+        }
+        
+        
+    }
+</script>
+
+
+  <!--main class=""><!--class='container'*/-->
+</main-->
+    
+
+
+    
+        
+        
+        
+    
+    
+    
+    
+    
+    
+        
+    
+
+<div
+    class="hero text-white flex fixed w-full -z-10 top-0 h-[260px] items-end "
+    style="background: url(https://privacyperceptions.org/assets/hero.png);background-size:cover;">
+    
+    <h1 class="text-xl !font-normal  pt-8 pb-8 px-6 md:px-16 lg:px-24 xl:px-24 m-0">Privacy Policy</h1>
+    
+    
+    
+    
+</div>
+<main class="mt-[260px] bg-white z-20 text-base top-0 relative"> 
+    <!--div class="-mt-4"-->
+        
+        <div class=" ">
+    
+    <p>This website is administered by the Chair for Statistics and Data Science in Social Sciences and the Humanities (SODA) at LMU, which falls under the jurisdiction of EU GDPR regulation. For more information about your rights under GDPR, please refer to Regulation (EU) 2016/679 (GDPR) or visit: https://ec.europa.eu/info/aid-development-cooperation-fundamental-rights/your-rights-eu/know-your-rights/freedoms/protection-personal-data_en </p>
+<p>This privacy policy explains how our organisation uses the personal data we collect from you when you use our website. This Privacy Policy relates to the use of this website only. </p>
+<h1 id="what-data-do-we-collect">What data do we collect?</h1>
+<p>Our organisation collects the following data through this website:</p>
+<ul>
+<li>Basic log information
+<ul>
+<li>IP addresses and corresponding location data</li>
+<li>Browser type</li>
+</ul>
+</li>
+<li>Unique device identifiers
+-- Language preferences
+-- Referring site
+-- Date and time of access
+-- Operating system</li>
+<li>Usage statistics (such as clicks on links on our website)</li>
+<li>Email addresses (only when you sign up to join the conversation about privacy or to the newsletter)</li>
+</ul>
+<h1 id="how-do-we-collect-your-data">How do we collect your data?</h1>
+<p>You directly provide LMU with the data we collect when you enter and use our website. We collect and process data when you:</p>
+<ul>
+<li>Use or view our website via your browser’s cookies</li>
+<li>Interact with any of the links on our website</li>
+<li>Use the newsletter sign-up</li>
+<li>This website is hosted on WordPress.com. To collect your data, this website uses WordPress Plugins from automattic. More information on their privacy policy can be found here: https://automattic.com/privacy/</li>
+</ul>
+<h1 id="how-will-we-use-your-data">How will we use your data?</h1>
+<p>This website collects your data so that we can:</p>
+<ul>
+<li>Optimise the performance of our website based on your system specifications</li>
+<li>Respond to your queries when using the newsletter sign-up</li>
+<li>Create and analyse usage statistics of our website</li>
+<li>Protect the website from spam and other malicious activity</li>
+<li>The TAPP website uses Mailchimp to send initial invitations and to distribute the newsletter. If you sign up to join the conversation or the newsletter, you agree that your data will be shared with Mailchimp for the purpose of sending out emails. More information on their privacy policy can be found here: https://www.intuit.com/privacy/statement/</li>
+</ul>
+<h1 id="how-do-we-store-your-data">How do we store your data?</h1>
+<p>The TAPP website is hosted on WordPress.com. Your usage and log information are stored securely on servers operated by automattic (for WordPress.com). For more information on their GDPR compliance, please visit: https://automattic.com/privacy/#european-general-data-protection-regulation-gdpr</p>
+<p>When signing up to join the conversation about privacy or for the newsletter, your email address will be stored on Mailchimp and retained for the duration of the project. You can request for us to remove your email address from our register at any time before that. This can be done either by using the respective link at the bottom of our newsletter (“unsubscribe”) or by emailing info@privacyperceptions.org. Once the project has reached its conclusion, all your personal data in relation to this website will be deleted.</p>
+<h1 id="what-are-your-data-protection-rights">What are your data protection rights?</h1>
+<p>TAPP would like to make sure you are fully aware of all of your data protection rights.</p>
+<p>Under GDPR, every user on our website is entitled to the following:</p>
+<ul>
+<li>The right to access – You have the right to request copies of your personal data from TAPP.</li>
+<li>The right to rectification – You have the right to request that TAPP correct any information you believe is inaccurate. You also have the right to request TAPP to complete information you believe is incomplete.</li>
+<li>The right to erasure – You have the right to request that TAPP erase your personal data, under certain conditions.</li>
+<li>The right to restrict processing – You have the right to request that TAPP restrict the processing of your personal data, under certain conditions.</li>
+<li>The right to object to processing – You have the right to object to TAPP’s processing of your personal data, under certain conditions.</li>
+<li>The right to data portability – You have the right to request that TAPP transfer the data that we have collected to another organisation, or directly to you, under certain conditions.</li>
+</ul>
+<p>If you would like to exercise any of these rights, please contact us at our email: info@privacyperceptions.org</p>
+<h1 id="what-are-cookies">What are cookies?</h1>
+<p>Cookies are text files placed on your computer to collect standard Internet log information and visitor behaviour information. When you visit our websites, we may collect information from you automatically through cookies or similar technology.</p>
+<p>For further information, visit www.allaboutcookies.org.</p>
+<h1 id="how-do-we-use-cookies">How do we use cookies?</h1>
+<p>The TAPP website uses cookies mainly for understanding how the website performs, how you interact with our website, and keeping our services secure. Our cookies enable us to provide you with a better and improved user experience and help speed up your future interactions with our website.</p>
+<h1 id="what-types-of-cookies-do-we-use">What types of cookies do we use?</h1>
+<p>There are a number of different types of cookies our website uses. Aside from necessary cookies, you can opt-in to also use the following:</p>
+<ul>
+<li>Functionality – Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedback, and other third-party features.</li>
+<li>Performance – Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors.</li>
+<li>Analytics – Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.</li>
+<li>Advertisement – Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customised ads.</li>
+<li>Other – Other uncategorized cookies are those that are being analysed and have not been classified into a category as yet.</li>
+<li>By default, only necessary cookies are collected to protect your privacy. Necessary cookies are retained for a period of 11 months.</li>
+</ul>
+<h1 id="how-to-manage-cookies">How to manage cookies</h1>
+<p>You can set your browser not to accept cookies, and you can manually remove existing cookies from your browser. It is possible that disabling or removing cookies can lead to some features of our website not working as a result.</p>
+<h1 id="privacy-policies-of-other-websites">Privacy policies of other websites</h1>
+<p>The TAPP website contains links to other websites (such as Twitter.com). Our privacy policy applies only to our website, so if you click on a link to another website, you should read their privacy policy.</p>
+<h1 id="changes-to-our-privacy-policy">Changes to our privacy policy</h1>
+<p>The TAPP website keeps its privacy policy under regular review and places any updates on this web page. This privacy policy was last updated on 30 June 2022.</p>
+<h1 id="how-to-contact-us">How to contact us</h1>
+<p>If you have any questions about the TAPP website’s privacy policy, the data we hold on you, or you would like to exercise one of your data protection rights, please do not hesitate to contact us at: info@privacyperceptions.org</p>
+<h1 id="how-to-contact-the-appropriate-authority">How to contact the appropriate authority</h1>
+<p>Should you wish to report a complaint or if you feel that your concern has not been addressed  in a satisfactory manner, you may contact the Data Protection Officer of the LMU Munich. Contact details can be found here: https://www.lmu.de/de/die-lmu/struktur/organisation/beauftragte/datenschutzbeauftragte/index.html</p>
+
+</div>
+        
+        
+    <!--/div -->
+</main>
+<script>
+    //remove empty <p></p> generated by Zola
+     var paragraphs = document.querySelectorAll("main > p");
+       for (var i = 0; i < paragraphs.length; i++) {
+        if (paragraphs[i].innerHTML==""){
+            paragraphs[i].remove();
+        }
+        
+    }
+</script>
+
+  
+  <footer class="bg-white text-primary py-6 px-6 md:px-16 lg:px-24 xl:px-24 z-40" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+
+    <div class="flex flex-wrap justify-between items-start space-y-4 md:space-y-0"> <!-- flex-wrap added for wrapping -->
+        <!-- Contact Information -->
+        <div class="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8"> <!-- Column on small screens, row on larger screens -->
+            <!-- Email Section -->
+            <a href="mailto:info@privacyperceptions.org" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fas fa-envelope mr-2"></i> <!-- Email icon -->
+                info@privacyperceptions.org
+            </a>
+
+            <!-- LinkedIn Section -->
+            <a href="https://www.linkedin.com/company/tapp-insights" target="_blank" class="flex items-center text-base font-semibold leading-tight hover:text-accent">
+                <i class="fab fa-linkedin mr-2"></i> <!-- LinkedIn icon -->
+                @tapp-insights
+            </a>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6"> <!-- Make links wrap and align properly -->
+            <a href="/privacy-policy" class="text-base font-semibold leading-tight hover:text-accent">Privacy Policy</a>
+            <a href="/legal-notice" class="text-base font-semibold leading-tight hover:text-accent">Legal Notice</a>
+            <a href="/data-protection" class="text-base font-semibold leading-tight hover:text-accent">Data Protection Statement</a>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-300 mt-6"></div>
+
+    <!-- Footer bottom -->
+    <div class="flex justify-between items-center pt-4">
+        <p class="text-sm leading-5">&copy; 2024– Transatlantic Privacy Perceptions. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>
